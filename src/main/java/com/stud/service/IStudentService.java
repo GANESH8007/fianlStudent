@@ -3,6 +3,7 @@ package com.stud.service;
 import java.util.List;
 import java.util.Optional;
 
+//import com.stud.model.State;
 import com.stud.model.Student;
 
 public interface IStudentService {
@@ -19,7 +20,22 @@ public interface IStudentService {
 	
 	Student updateStudent(Student student,Integer id);
 
-	List<Student> getStudentByClass(Integer StudClass);
+	String GenerateRegNo();
+
+	Student updateStudentStatus(Student student, Integer id);
+
+	boolean isStringOnlyAlphabet(String str);
+
+	boolean isNumeric(String strNum);
+
+	boolean CheckDate(String givenDate);
+
+
+
+	//List<State> getCity(String state);
+
+
+//	List<Student> getStudentByClass(Integer StudClass);
 
 
 }
